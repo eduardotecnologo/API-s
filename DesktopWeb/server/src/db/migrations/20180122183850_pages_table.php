@@ -32,8 +32,8 @@ class PagesTable extends AbstractMigration
         $pages->addColum('title', 'string', ['limit' => 100]);
         $pages->addColum('slug', 'string', ['limit' => 100]);
         $pages->addColum('body', 'text');
-        $pages->addColum('created_at', 'text');
-        $pages->addColum('updated_at', 'text');
+        $pages->addColum('created_at', 'datetime');
+        $pages->addColum('updated_at', 'datetime');
         $pages->create();
     }
 }
